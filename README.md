@@ -1,2 +1,2 @@
 # conan-recipes
- Collection of conan recipes
+Collection of conan recipes.
