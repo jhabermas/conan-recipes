@@ -7,9 +7,9 @@ required_conan_version = ">=1.33.0"
 class CertifyConan(ConanFile):
     name = "certify"
     description = "Platform-specific TLS keystore abstraction for use with Boost.ASIO and OpenSSL"
-    topics = ("conan", "boost", "asio", "tls", "ssl", "https")
-    url = "https://github.com/djarek/certify"
-    homepage = "https://djarek.github.io/certify/"
+    topics = ("boost", "asio", "tls", "ssl", "https")
+    url = "https://github.com/conan-io/conan-center-index"
+    homepage = "https://github.com/djarek/certify"
     license = "BSL-1.0"
     settings = "compiler"
     generators = "cmake", "cmake_find_package"
@@ -24,8 +24,8 @@ class CertifyConan(ConanFile):
         return "17"
 
     def requirements(self):
-        self.requires("boost/1.76.0")
-        self.requires("openssl/1.1.1k")
+        self.requires("boost/1.77.0")
+        self.requires("openssl/1.1.1l")
 
     def validate(self):
         if self.settings.compiler.get_safe("cppstd"):
